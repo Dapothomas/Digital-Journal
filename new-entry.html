@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Entry | The Digital Vellum</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">The Digital Vellum</div>
+  <nav class="main-nav">
+    <a href="index.html">Journal</a>
+    <a href="vault.html">Vault</a>
+  </nav>
+  <div class="header-actions">
+    <a href="new-entry.html" class="btn btn-primary">New Entry</a>
+    <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+    <a href="vault.html" class="icon-btn" aria-label="Profile">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"></path></svg>
+    </a>
+  </div>
+</header>
+
+<main>
+  <p class="entry-date" id="entry-date-label">WEDNESDAY, MAY 22 2024</p>
+
+  <form class="entry-editor" id="entry-form">
+    <aside>
+      <p class="depth-insight">DEPTH INSIGHT</p>
+      <p class="depth-insight-quote">Write without judgment. The vellum remembers only what you choose to ink.</p>
+    </aside>
+
+    <div>
+      <input type="text" class="entry-title-input" id="entry-title" placeholder="Untitled Reflection">
+
+      <div class="entry-tag-row">
+        <input type="text" class="tag-input" id="entry-tag" placeholder="Add a tag">
+      </div>
+
+      <textarea class="entry-body-input" id="entry-body" placeholder="Begin your reflection..."></textarea>
+
+      <div class="editor-footer">
+        <div class="editor-footer-left">
+          <button type="button" class="editor-tool">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            Insert Memory
+          </button>
+          <button type="button" class="editor-tool" id="private-toggle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            Private
+          </button>
+        </div>
+        <div class="editor-footer-right">
+          <button type="button" class="btn btn-ghost" id="discard-btn">Discard</button>
+          <button type="submit" class="btn btn-primary">Save Entry</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; 2026 The Digital Vellum. Designed for reflection.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="vault.html">Archive</a>
+  </div>
+</footer>
+
+<script src="storage.js"></script>
+<script src="entry.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>

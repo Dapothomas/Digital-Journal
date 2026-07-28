@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Digital Vellum</title>
+<link rel="stylesheet" href="styles.css">
+<script>
+document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">The Digital Vellum</div>
+  <nav class="main-nav">
+    <a href="index.html" class="active">Journal</a>
+    <a href="vault.html">Vault</a>
+  </nav>
+  <div class="header-actions">
+    <a href="new-entry.html" class="btn btn-primary">New Entry</a>
+    <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+    </button>
+    <a href="vault.html" class="icon-btn" aria-label="Profile">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"></path></svg>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="page-heading">
+    <h1>Daily Reflections</h1>
+    <p>A sanctuary for your thoughts. Captured in the quiet moments between the noise of the world.</p>
+  </div>
+
+  <div class="entry-grid" id="entry-grid">
+    <article class="card featured">
+      <span class="card-date">MARCH 24, 2026</span>
+      <h3 class="card-title">The silence of the early morning is where the best ideas are born.</h3>
+      <p class="card-excerpt">I woke up at 5:00 AM today. There is a specific kind of stillness that exists before the city wakes up...</p>
+    </article>
+    <article class="card alt">
+      <span class="card-date">DECEMBER 25, 2025</span>
+      <h3 class="card-title">Rethinking the project architecture.</h3>
+      <p class="card-excerpt">Spent the afternoon sketching out new user flows. Simplification is harder than complexity.</p>
+      <div class="card-tags"><span class="tag">Work</span><span class="tag">Ideas</span></div>
+    </article>
+    <article class="card alt">
+      <span class="card-date">AUGUST 21, 2025</span>
+      <h3 class="card-title">The rain in the city.</h3>
+      <p class="card-excerpt">The way the neon lights reflect on the wet pavement tonight is mesmerizing.</p>
+      <div class="card-tags"><span class="tag">Poetry</span></div>
+    </article>
+    <article class="card">
+      <span class="card-date">AUGUST 23, 2025</span>
+      <h3 class="card-title">Notes on intentionality and the digital space.</h3>
+      <p class="card-excerpt">Why do we feel the need to document everything? Perhaps it's an anchor against the fleeting nature of time.</p>
+    </article>
+    <article class="card">
+      <span class="card-date">JULY 2, 2025</span>
+      <h3 class="card-title">A perfect, ordinary Tuesday.</h3>
+      <p class="card-excerpt">Nothing remarkable happened, and that felt like its own kind of gift.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; 2026 The Digital Vellum. Designed for reflection.</span>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="vault.html">Archive</a>
+  </div>
+</footer>
+
+<script src="storage.js"></script>
+<script src="home.js"></script>
+<script src="theme.js"></script>
+</body>
+</html>
