@@ -6,6 +6,9 @@ rendered dynamically on both the home page and the full vault.
 
 ## Screenshot
 <img width="1710" height="885" alt="Screenshot3" src="https://github.com/user-attachments/assets/9f0572e6-feeb-4525-821d-8027bb8d2fd7" />
+<img width="1709" height="883" alt="Screenshot2" src="https://github.com/user-attachments/assets/44c6525b-97f7-434a-85b9-35081c1500af" />
+<img width="1709" height="881" alt="Screenshot1" src="https://github.com/user-attachments/assets/c22ae8f4-c471-4edc-91aa-f6d75472f645" />
+
 
 ## Pages
 
