@@ -5,9 +5,7 @@ are written on `new-entry.html`, saved to the browser's `localStorage`, and
 rendered dynamically on both the home page and the full vault.
 
 ## Screenshot
-![Journal Screenshot](./screenshots/screenshot1.png)
-![Journal Screenshot](./screenshots/screenshot2.png)
-![Journal Screenshot](./screenshots/screenshot3.png)
+<img width="1710" height="885" alt="Screenshot3" src="https://github.com/user-attachments/assets/9f0572e6-feeb-4525-821d-8027bb8d2fd7" />
 
 ## Pages
 
