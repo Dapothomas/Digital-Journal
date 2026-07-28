@@ -4,6 +4,9 @@ A multi-page digital diary built with plain HTML, CSS, and JavaScript. Entries
 are written on `new-entry.html`, saved to the browser's `localStorage`, and
 rendered dynamically on both the home page and the full vault.
 
+## Link
+https://dapothomas.github.io/Digital-Journal/
+
 ## Screenshot
 <img width="1710" height="885" alt="Screenshot3" src="https://github.com/user-attachments/assets/9f0572e6-feeb-4525-821d-8027bb8d2fd7" />
 <img width="1709" height="883" alt="Screenshot2" src="https://github.com/user-attachments/assets/44c6525b-97f7-434a-85b9-35081c1500af" />
